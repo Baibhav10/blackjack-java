@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        BlackjackGame game = new BlackjackGame();
-        game.play();
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                new BlackjackGUI().setVisible(true);
+            }
+        });
     }
 }
